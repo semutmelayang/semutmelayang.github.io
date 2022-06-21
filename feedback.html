@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahmi's Feedback</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="feedback.css" />
+    <script defer src="app.js"></script>
+</head>
+<body class="light">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html"> Home</a></li>
+          <li class="nav-item"><a href="gallery.html"> Gallery</a></li>
+          <li class="nav-item"><a href="feedback.html"> Feedback</a></li>
+        </ul>
+      </nav>
+      <form action="index.html" onsubmit="alert('Thank you for your feedback')">
+        <h1>FeedBack Form</h1>
+        <fieldset>
+          <label for="firstName">Full name</label>
+          <input type="text" name="name" id="firstName" placeholder="Enter full name">
+        </fieldset>
+      
+        <fieldset>
+          <label for="textarea">Feedback</label>
+          <textarea name="textarea" id="textarea" placeholder="What i need to improve?"></textarea>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Did You Like This Website</legend>
+          <input type="radio" id="radio1" name="radios" checked>
+          <label for="radio1">YES</label><br>
+          <input type="radio" id="radio2" name="radios">
+          <label for="radio2">NO</label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which part of the website you like the most?</legend>
+          <input type="checkbox" id="check1" name="checkboxes" checked>
+          <label for="check1">Home</label><br>
+          <input type="checkbox" id="check2" name="checkboxes">
+          <label for="check2">Gallery</label><br>
+          <input type="checkbox" id="check3" name="checkboxes">
+          <label for="check3">Feedback</label>
+
+        </fieldset>
+      
+        <fieldset>
+          <label for="select-choice">How did you find this website?</label>
+          <select name="select-choice" id="select-choice">
+            <option value="Choice 1">- - select one - -</option>
+            <option value="Choice 2">assignment link</option>
+            <option value="Choice 3">you shared it</option>
+            <option value="Choice 4">found it on your socials!</option>
+          </select>
+        </fieldset>
+      
+        <button >Submit</button>
+      </form>
+    <script src="feedback.js"></script>
+</body>
+</html>
